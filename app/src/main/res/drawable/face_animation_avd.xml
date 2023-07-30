@@ -1,0 +1,87 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="face_animation_vector"
+            android:width="64dp"
+            android:height="64dp"
+            android:viewportWidth="288"
+            android:viewportHeight="288">
+            <group android:name="face_group">
+                <path
+                    android:name="right_eye"
+                    android:pathData="M 174 126 M 159 126 C 159 122.023 160.581 118.205 163.393 115.393 C 166.205 112.581 170.023 111 174 111 C 177.977 111 181.795 112.581 184.607 115.393 C 187.419 118.205 189 122.023 189 126 C 189 129.977 187.419 133.795 184.607 136.607 C 181.795 139.419 177.977 141 174 141 C 170.023 141 166.205 139.419 163.393 136.607 C 160.581 133.795 159 129.977 159 126"
+                    android:fillColor="#22004f"/>
+                <path
+                    android:name="left_eye"
+                    android:pathData="M 114 126 M 99 126 C 99 122.023 100.581 118.205 103.393 115.393 C 106.205 112.581 110.023 111 114 111 C 117.977 111 121.795 112.581 124.607 115.393 C 127.419 118.205 129 122.023 129 126 C 129 129.977 127.419 133.795 124.607 136.607 C 121.795 139.419 117.977 141 114 141 C 110.023 141 106.205 139.419 103.393 136.607 C 100.581 133.795 99 129.977 99 126"
+                    android:fillColor="#22004f"/>
+                <path
+                    android:name="face"
+                    android:pathData="M 275.28 151.92 C 275.76 149.4 276 146.76 276 144 C 276 141.24 275.76 138.6 275.28 136.08 C 272.28 117.96 258.96 103.2 241.56 98.04 C 235.2 84.6 226.2 72.84 215.28 63.12 C 196.32 46.2 171.36 36 144 36 C 116.64 36 91.68 46.2 72.72 63.12 C 61.68 72.84 52.68 84.72 46.44 98.04 C 29.04 103.2 15.72 117.84 12.72 136.08 C 12.24 138.6 12 141.24 12 144 C 12 146.76 12.24 149.4 12.72 151.92 C 15.72 170.04 29.04 184.8 46.44 189.96 C 52.68 203.28 61.68 215.04 72.48 224.64 C 91.44 241.68 116.52 252 144 252 C 171.48 252 196.56 241.68 215.64 224.64 C 226.44 215.04 235.44 203.16 241.68 189.96 C 258.96 184.8 272.28 170.16 275.28 151.92 Z M 228 168 C 226.8 168 225.72 167.76 224.52 167.64 C 222.12 175.68 218.64 183.12 214.2 189.96 C 199.2 212.88 173.4 228 144 228 C 114.6 228 88.8 212.88 73.8 189.96 C 69.36 183.12 65.88 175.68 63.48 167.64 C 62.28 167.76 61.2 168 60 168 C 46.8 168 36 157.2 36 144 C 36 130.8 46.8 120 60 120 C 61.2 120 62.28 120.24 63.48 120.36 C 65.88 112.32 69.36 104.88 73.8 98.04 C 88.8 75.12 114.6 60 144 60 C 173.4 60 199.2 75.12 214.2 98.04 C 218.64 104.88 222.12 112.32 224.52 120.36 C 225.72 120.24 226.8 120 228 120 C 241.2 120 252 130.8 252 144 C 252 157.2 241.2 168 228 168 Z M 90 168 C 99.12 189.24 119.88 204 144 204 C 168.12 204 188.88 189.24 198 168 L 90 168 Z"
+                    android:fillColor="#22004f"/>
+            </group>
+        </vector>
+    </aapt:attr>
+    <target android:name="face_group">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="rotation"
+                    android:duration="800"
+                    android:valueFrom="0"
+                    android:valueTo="360"
+                    android:valueType="floatType"
+                    android:interpolator="@android:anim/accelerate_decelerate_interpolator"/>
+                <objectAnimator
+                    android:propertyName="pivotX"
+                    android:duration="800"
+                    android:valueFrom="144"
+                    android:valueTo="144"
+                    android:valueType="floatType"
+                    android:interpolator="@android:anim/accelerate_decelerate_interpolator"/>
+                <objectAnimator
+                    android:propertyName="pivotY"
+                    android:duration="800"
+                    android:valueFrom="144"
+                    android:valueTo="144"
+                    android:valueType="floatType"
+                    android:interpolator="@android:anim/accelerate_decelerate_interpolator"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="right_eye">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="fillColor"
+                android:duration="800"
+                android:valueFrom="#22004f"
+                android:valueTo="#FF0000"
+                android:valueType="colorType"
+                android:interpolator="@android:anim/accelerate_decelerate_interpolator"/>
+        </aapt:attr>
+    </target>
+    <target android:name="left_eye">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="fillColor"
+                android:duration="800"
+                android:valueFrom="#22004f"
+                android:valueTo="#FF0000"
+                android:valueType="colorType"
+                android:interpolator="@android:anim/accelerate_decelerate_interpolator"/>
+        </aapt:attr>
+    </target>
+    <target android:name="face">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="fillColor"
+                android:duration="800"
+                android:valueFrom="#22004f"
+                android:valueTo="#FF0000"
+                android:valueType="colorType"
+                android:interpolator="@android:anim/accelerate_decelerate_interpolator"/>
+        </aapt:attr>
+    </target>
+</animated-vector>
